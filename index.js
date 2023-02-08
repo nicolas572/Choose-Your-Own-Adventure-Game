@@ -1,18 +1,19 @@
 //Your Code here
-let firstAnswer = window.prompt("Do you like pineapples on pizza?")
-console.log(firstAnswer === "yes")
+let firstAnswer = window.prompt("Do you take the road on the left or the right?")
+console.log(firstAnswer)
 
-//yes or no conditional statement
-if (firstAnswer === "yes") {
-    let secondAnswer = window.prompt("Is pizza your favorite food?")
-    }    
-    if (firstAnswer === "yes") {
-        let secondAnswer = window.alert("YOU ARE WINNING AT LIFE!!!")
+console.log(firstAnswer === "left")
 
-} else if(firstAnswer === "no") {
-    let secondAnswer = window.prompt("Do you like sardines on your pizza?")
-    }
-    if (firstAnswer === "yes") {
-        let secondAnswer = window.alert("GROSS!")
+//True or flase conditional statement
+if (firstAnswer === "left") {
+  let secondAnswer = window.prompt("There is a massive pothole ahead, do you go left or right?")
+  if (secondAnswer === "left") {
+    window.alert("YOU RAN OVER A BOULDER AND FLIPPED YOUR CAR!")
+  } else {
+    window.alert("You steered clear of all obstacles, but have not found the treasure yet, TRY AGAIN!")
+  }
+
+} else {
+    console.log("You have found treasure, congratulations!")
 
 }
